@@ -1,15 +1,24 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import Profile from './Profile/Profile';
+import Profile from "./Profile/Profile";
+import Filter from "./Filter/Filter";
+import Listing from "./Listing/Listing";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <Profile/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Profile />} />
+          <Route path="/filter" element={<Filter />} />
+          <Route path="/listing" element={<Listing />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
