@@ -42,12 +42,12 @@ const Listing = () => {
                                         <div className="room__detail__option d-flex justify-content-between align-item-between flex-wrap">
                                             <div className="btn-group row" role="group" aria-label="Basic radio toggle button group">
 
-                                                
+
                                                 <input type="radio" className="btn-check" name="btnradio" id="btnradio1" autoComplete="off" defaultChecked />
                                                 <label className="btn btn-outline-primary col-lg-6" htmlFor="btnradio1">
                                                     <div>
                                                         <img src="/image/Room.png" alt="" />
-                                                    
+
                                                     </div>Single</label>
 
 
@@ -56,7 +56,7 @@ const Listing = () => {
                                                     <div>
                                                         <img src="/image/Room.png" alt="" />
                                                         <img src="/image/Room.png" alt="" />
-                                                    
+
                                                     </div>Double</label>
 
 
@@ -66,7 +66,7 @@ const Listing = () => {
                                                         <img src="/image/Room.png" alt="" />
                                                         <img src="/image/Room.png" alt="" />
                                                         <img src="/image/Room.png" alt="" />
-                                                    
+
                                                     </div>Triple</label>
 
 
@@ -77,10 +77,8 @@ const Listing = () => {
                                                         <img src="/image/Room.png" alt="" />
                                                         <img src="/image/Room.png" alt="" />
                                                         <img src="/image/Room.png" alt="" />
-                                                    
+
                                                     </div>Four</label>
-
-
                                             </div>
 
 
@@ -117,7 +115,9 @@ const Listing = () => {
                         </div>
                     </div>
                 </div>
+
             </section>
+
 
         </>
     );

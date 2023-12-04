@@ -3,7 +3,7 @@ import "./Profile.css";
 
 const Profile = () => {
   const [nameChange, setNameChange] = useState("Navneet Yadav");
-  const handleClickName = () => {};
+  const handleClickName = () => { };
   return (
     <>
       <section className="container account">
@@ -14,7 +14,7 @@ const Profile = () => {
             id="pills-tab"
             role="tablist"
           >
-            <li className="nav-item" role="presentation">
+            <li className="nav-item profile__nav__item" role="presentation">
               <button
                 className="  nav-link nav__link active d-flex justify-content-start"
                 id="pills-home-tab"
@@ -28,7 +28,7 @@ const Profile = () => {
                 My Profile
               </button>
             </li>
-            <li className="nav-item" role="presentation">
+            <li className="nav-item profile__nav__item" role="presentation">
               <button
                 className="nav-link nav__link d-flex justify-content-start"
                 id="pills-profile-tab"
@@ -42,7 +42,7 @@ const Profile = () => {
                 Tenant space
               </button>
             </li>
-            <li className="nav-item" role="presentation">
+            <li className="nav-item profile__nav__item" role="presentation">
               <button
                 className="nav-link nav__link d-flex justify-content-start"
                 id="pills-contact-tab"
@@ -56,7 +56,7 @@ const Profile = () => {
                 Shortlist
               </button>
             </li>
-            <li className="nav-item" role="presentation">
+            <li className="nav-item profile__nav__item" role="presentation">
               <button
                 className="nav-link nav__link d-flex justify-content-start"
                 id="pills-transfer-tab"
@@ -71,7 +71,7 @@ const Profile = () => {
               </button>
             </li>
             <hr className="divider" />
-            <li className="nav-item" role="presentation">
+            <li className="nav-item profile__nav__item" role="presentation">
               <button
                 className="  nav-link nav_link_botm d-flex justify-content-start"
                 id="pills-password-tab"
@@ -85,7 +85,7 @@ const Profile = () => {
                 Change Password
               </button>
             </li>
-            <li className="nav-item" role="presentation">
+            <li className="nav-item profile__nav__item" role="presentation">
               <button
                 className="nav-link nav_link_botm d-flex justify-content-start"
                 id="pills-delete-tab"

@@ -44,8 +44,8 @@
     border-bottom: 1px solid #E0E0E0;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .list__link.active,
+.nav-pills .show>.list__link {
     width: 100%;
     height: 69px;
     flex-shrink: 0;
