@@ -10,23 +10,23 @@ const Listing = () => {
                         <div className="row listing__body">
                             <div className="col-lg-3 p-0">
                                 <ul className="nav nav-pills mb-3 d-flex flex-column detail__menu__list" id="pills-tab" role="tablist">
-                                    <li className="nav-item" role="presentation">
-                                        <button className="w-100 nav-link  list__link d-flex justify-content-start active" id="room-detail-tab" data-bs-toggle="pill" data-bs-target="#room-detail" type="button" role="tab" aria-controls="room-detail" aria-selected="true"><img src="/image/Rectangle 10.png" alt />My Profile</button></li>
+                                    <li className="nav-item " role="presentation">
+                                        <button className="w-100 nav-link  list__link d-flex justify-content-start active" id="room-detail-tab" data-bs-toggle="pill" data-bs-target="#room-detail" type="button" role="tab" aria-controls="room-detail" aria-selected="true"><img src="/image/Rectangle 10.png" alt />Room Details</button></li>
 
-                                    <li className="nav-item" role="presentation">
-                                        <button className="nav-link  list__link d-flex justify-content-start" id="locality-detail-tab" data-bs-toggle="pill" data-bs-target="#locality-detail" type="button" role="tab" aria-controls="locality-detail" aria-selected="false"><img src="/image/Rectangle 86.png" alt />Tenant space</button></li>
+                                    <li className="nav-item " role="presentation">
+                                        <button className="nav-link  list__link d-flex justify-content-start" id="locality-detail-tab" data-bs-toggle="pill" data-bs-target="#locality-detail" type="button" role="tab" aria-controls="locality-detail" aria-selected="false"><img src="/image/Rectangle 86.png" alt />Locality details</button></li>
 
-                                    <li className="nav-item" role="presentation">
-                                        <button className="nav-link  list__link d-flex justify-content-start" id="pg-detail-tab" data-bs-toggle="pill" data-bs-target="#pg-detail" type="button" role="tab" aria-controls="pg-detail" aria-selected="false"><img src="/image/Rectangle 87.png" alt />Shortlist</button></li>
+                                    <li className="nav-item " role="presentation">
+                                        <button className="nav-link  list__link d-flex justify-content-start" id="pg-detail-tab" data-bs-toggle="pill" data-bs-target="#pg-detail" type="button" role="tab" aria-controls="pg-detail" aria-selected="false"><img src="/image/Rectangle 87.png" alt />PG details</button></li>
 
-                                    <li className="nav-item" role="presentation">
-                                        <button className="nav-link  list__link d-flex justify-content-start" id="amenities-tab" data-bs-toggle="pill" data-bs-target="#amenities" type="button" role="tab" aria-controls="amenities" aria-selected="false"><img src="/image/Rectangle 88.png" alt />My Payments</button></li>
+                                    <li className="nav-item " role="presentation">
+                                        <button className="nav-link  list__link d-flex justify-content-start" id="amenities-tab" data-bs-toggle="pill" data-bs-target="#amenities" type="button" role="tab" aria-controls="amenities" aria-selected="false"><img src="/image/Rectangle 88.png" alt />Amenities</button></li>
 
-                                    <li className="nav-item" role="presentation">
-                                        <button className="nav-link  list__link d-flex justify-content-start" id="gallery-tab" data-bs-toggle="pill" data-bs-target="#amenities" type="button" role="tab" aria-controls="gallery" aria-selected="false"><img src="/image/Rectangle 89.png" alt />Change Password</button></li>
+                                    <li className="nav-item " role="presentation">
+                                        <button className="nav-link  list__link d-flex justify-content-start" id="gallery-tab" data-bs-toggle="pill" data-bs-target="#amenities" type="button" role="tab" aria-controls="gallery" aria-selected="false"><img src="/image/Rectangle 89.png" alt />Gallery</button></li>
 
-                                    <li className="nav-item" role="presentation">
-                                        <button className="nav-link  list__link d-flex justify-content-start" id="schedule-tab" data-bs-toggle="pill" data-bs-target="#schedule" type="button" role="tab" aria-controls="amenities" aria-selected="false"><img src="/image/Rectangle 90.png" alt />Delete Listing</button></li>
+                                    <li className="nav-item " role="presentation">
+                                        <button className="nav-link  list__link d-flex justify-content-start" id="schedule-tab" data-bs-toggle="pill" data-bs-target="#schedule" type="button" role="tab" aria-controls="amenities" aria-selected="false"><img src="/image/Rectangle 90.png" alt />Schedule</button></li>
 
                                 </ul>
                             </div>
@@ -39,39 +39,41 @@ const Listing = () => {
                                             <label htmlFor="pg-name" className="form-label">PG Name *</label><input type="text" className="form-control" id="pg-name" placeholder="Enter Your PG Name" />
                                         </div>
                                         <h4>Select the type of rooms available in your PG</h4>
-                                        <div className="room__detail__option d-flex justify-content-between align-item-between flex-wrap">
-                                            <div className="btn-group row" role="group" aria-label="Basic radio toggle button group">
 
 
-                                                <input type="radio" className="btn-check" name="btnradio" id="btnradio1" autoComplete="off" defaultChecked />
-                                                <label className="btn btn-outline-primary col-lg-6" htmlFor="btnradio1">
-                                                    <div>
-                                                        <img src="/image/Room.png" alt="" />
+                                        <div className="row w-100">
+                                            <div className="col-lg-6">
+                                                <div>
+                                                    <input type="radio" className="btn-check" name="btnradio" id="btnradio1" autoComplete="off" defaultChecked />
+                                                    <label className="btn btn-outline-primary Listing__option " htmlFor="btnradio1">
+                                                        <div>
+                                                            <img src="/image/Room.png" alt="" />
 
-                                                    </div>Single</label>
-
-
+                                                        </div>Single</label>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6"> <div>
                                                 <input type="radio" className="btn-check" name="btnradio" id="btnradio2" autoComplete="off" />
-                                                <label className="btn btn-outline-primary col-lg-6" htmlFor="btnradio2">
+                                                <label className="btn btn-outline-primary Listing__option " htmlFor="btnradio2">
                                                     <div>
                                                         <img src="/image/Room.png" alt="" />
                                                         <img src="/image/Room.png" alt="" />
 
                                                     </div>Double</label>
-
-
+                                            </div></div>
+                                            <div className="col-lg-6"> <div>
                                                 <input type="radio" className="btn-check" name="btnradio" id="btnradio3" autoComplete="off" />
-                                                <label className="btn btn-outline-primary col-lg-6" htmlFor="btnradio3">
+                                                <label className="btn btn-outline-primary  Listing__option" htmlFor="btnradio3">
                                                     <div>
                                                         <img src="/image/Room.png" alt="" />
                                                         <img src="/image/Room.png" alt="" />
                                                         <img src="/image/Room.png" alt="" />
 
                                                     </div>Triple</label>
-
-
+                                            </div></div>
+                                            <div className="col-lg-6"><div>
                                                 <input type="radio" className="btn-check" name="btnradio" id="btnradio4" autoComplete="off" />
-                                                <label className="btn btn-outline-primary col-lg-6" htmlFor="btnradio4">
+                                                <label className="btn btn-outline-primary Listing__option " htmlFor="btnradio4">
                                                     <div>
                                                         <img src="/image/Room.png" alt="" />
                                                         <img src="/image/Room.png" alt="" />
@@ -80,10 +82,12 @@ const Listing = () => {
 
                                                     </div>Four</label>
                                             </div>
-
-
-
+                                            </div>
                                         </div>
+
+
+
+
                                     </div>
                                     <div className="tab-pane listing__pg" id="locality-detail" role="tabpanel" aria-labelledby="locality-detail-tab">
                                         <h3>Tenant Space</h3>
@@ -113,9 +117,13 @@ const Listing = () => {
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-
+                <div className="listing__foot__btns">
+                    <button className="listing__foot__btn-1">Back</button>
+                    <button className="listing__foot__btn-2">Save & Continue</button>
+                </div>ac
             </section>
 
 

@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
     margin: 0 auto;
 }
-.listing{
+
+.listing {
     margin: 0 auto;
 }
 
@@ -65,7 +66,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
+    display: flex;
+    align-items: center;
 }
 
 .nav-pills .nav-link {
@@ -131,7 +133,7 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 550;
-    margin: 33px 0;
+    margin: 18px 0;
     line-height: normal;
 }
 
@@ -178,10 +180,61 @@
     box-shadow: 0.2px 0.9px 0.9px 0px rgba(0, 0, 0, 0.20);
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     background: rgba(97, 85, 223, 0.30);
 }
-.btn-outline-primary:active{
+
+.btn-outline-primary:active {
     border: 0.2px solid #6155DF;
 
+}
+
+.Listing__option {
+    width: 180px !important;
+    height: 104px !important;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.room__detail__option {
+    padding: 10px 30px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.listing__foot__btn-1 {
+    color: #111C55;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 97.023%;
+    border-radius: 7px;
+
+    /* 21.345px */
+    width: 160px;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+.listing__foot__btn-2 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 97.023%;
+    /* 21.345px */
+    width: 220px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: rgba(17, 28, 85, 0.90);
+    margin-left: 20px;
+}
+
+.listing__foot__btns{
+    padding: 0px 245px !important ;
+    margin: 20px 200px;
 }
